@@ -72,13 +72,43 @@
             </span>
           </div>
         </div>
-
+        <iframe
+          name="hidden_iframe"
+          id="hidden_iframe"
+          style="display: none"
+          onload="if(submitted){window.location='contact.html';}"
+        ></iframe>
         <div class="contact-col">
-          <form action="">
-            <input type="text" placeholder="Enter your name" required />
-            <input type="email" placeholder="Enter email address" required />
-            <input type="text" placeholder="Enter your skin-type" required />
-            <textarea rows="8" placeholder="Message" required></textarea>
+          <form
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeebL6detesE_3FLYcJ1x-7tkPs8Bosh2ZIVMA3MpFXSiddbw/formResponse"
+            method="POST"
+            target="hidden_iframe"
+            onsubmiit="submitted=true"
+          >
+            <input
+              type="text"
+              placeholder="Enter your name"
+              required
+              name="entry.871664547"
+            />
+            <input
+              type="email"
+              placeholder="Enter email address"
+              required
+              name="entry.985091709"
+            />
+            <input
+              type="text"
+              placeholder="Enter your skin-type"
+              required
+              name="entry.243347797 "
+            />
+            <textarea
+              rows="8"
+              placeholder="Message"
+              required
+              name="entry.675329084"
+            ></textarea>
             <button type="submit" class="hero-btn red-btn">Send Message</button>
           </form>
         </div>
